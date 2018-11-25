@@ -1,0 +1,21 @@
+<!-- share 页面分享 -->
+<!-- canvas -->
+<view class='share_global'>
+  <canvas class="canvas" style='height:{{canvas_data.canvas_height}}px' canvas-id='canvas'></canvas>
+  <!-- 图片生成 -->
+  <block wx:if="{{canvas_show.share_show}}">
+    <view class='share_model'>
+      <!-- 蒙版 -->
+      <view class='share_mask' bindtap='hide_share'></view>
+      <!-- 图片 -->
+      <view class='share_content'>
+        <image class='share_image' style='width:{{canvas_data.share_image_width}}px; height:{{canvas_data.share_image_height}}px' src='{{canvas_data.share_image_path}}'></image>
+        <button class='share_image_save' bindtap='share_image_save'>保存</button>
+      </view>
+      <!-- 图标(×) -->
+      <view class='closs_share_model' bindtap='closs_share_model'>
+        <image class='closs_share_X' src='{{canvas_data.closs_share_X}}'></image>
+      </view>
+    </view>
+  </block>
+</view>

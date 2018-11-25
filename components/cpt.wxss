@@ -1,0 +1,141 @@
+/* components/cpt.wxss */
+
+/* share_one */
+
+.c_canvas {
+  width: 100%;
+  position: fixed;
+  top: 99999rpx;
+  left: 0;
+}
+
+.global {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15rpx;
+  top: 0;
+}
+
+.c_image {
+  border-radius: 5rpx;
+  margin: 0 auto;
+  box-shadow: 0px 0px 8px 0px #aaa;
+}
+
+.c_button {
+  background: linear-gradient(45deg, #09c3fe, #009aff);
+  width: 38%;
+  height: 88rpx;
+  border-radius: 44rpx;
+  margin-top: 43rpx;
+  color: white;
+  font-size: 35rpx;
+  border: none;
+}
+
+.handover {
+  position: fixed;
+  top: 45rpx;
+  width: 115rpx;
+  height: 45rpx;
+  font-size: 26rpx;
+  letter-spacing: 5rpx;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.27);
+  border-radius: 44rpx;
+  text-align: center;
+  line-height: 45rpx;
+  border: none;
+}
+
+/* share_two */
+
+page {
+  background-color: white;
+}
+
+.share_global {
+  width: 100%;
+}
+
+.preview_button {
+  background-color: #00ac50;
+  color: white;
+}
+
+.canvas {
+  width: 100%;
+  position: fixed;
+  top: 9999rpx;
+  left: 0;
+}
+
+.share_model {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.share_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+}
+
+.share_content {
+  position: fixed;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80rpx;
+  padding-bottom: 80rpx;
+  left: 15%;
+  z-index: 3;
+  top: 0;
+}
+
+.share_image {
+  border-radius: 10rpx;
+  margin: 0 auto;
+}
+
+.share_image_save {
+  background: linear-gradient(45deg, #09c3fe, #009aff);
+  width: 80%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  margin-top: 40rpx;
+  color: white;
+  font-size: 32rpx;
+  border: none;
+}
+
+.closs_share_model {
+  position: fixed;
+  right: 5%;
+  top: 10rpx;
+  padding: 20rpx;
+  z-index: 4;
+}
+
+.closs_share_X {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 0px 5px #999;
+  -webkit-box-shadow: 0px 0px 5px #999;
+  box-shadow: 0px 0px 5px #999;
+}

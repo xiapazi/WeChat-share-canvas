@@ -1,0 +1,4 @@
+<!-- 
+  cpt: component自定义组件, share_style: 样式(1 or 2), avatar: 头像, nickname: 昵称, qrcode: 小程序码, bgimage: 背景图片, left_1-5: 内容文字
+ -->
+<cpt share_style="1" avatar="/image/avatar.jpg" nickname="A I R" left_1="自强不息" left_2="谦卑若愚, 好学若饥." right_1="长按二维码识别关注" qrcode="/image/qrcode.jpg"></cpt>

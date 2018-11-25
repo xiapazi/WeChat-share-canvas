@@ -1,0 +1,37 @@
+<!--components/cpt.wxml-->
+<!-- share_one -->
+<block wx:if="{{share_style == 1}}">
+  <canvas class='c_canvas' canvas-id='canvas' style='width:{{canvas_data.canvas_width}}px; height:{{canvas_data.canvas_height}}px'></canvas>
+  <view class='global'>
+    <!-- image -->
+    <image class='c_image' style='width:{{canvas_data.image_width}}px;height:{{canvas_data.image_height}}px' src='{{canvas_path.image?canvas_path.image:canvas_path.default}}'></image>
+    <!-- button -->
+    <button class='c_button' bindtap='button_sava'>保存到相册</button>
+    <!-- handover -->
+    <view class='handover' style='right:{{canvas_data.image_width * 0.36}}rpx' bindtap='handover'>换一张</view>
+  </view>
+</block>
+
+<!-- share_two -->
+<block wx:if="{{share_style == 2}}">
+  <!-- canvas -->
+  <view class='share_global'>
+    <canvas class="canvas" style='height:{{canvas_data.canvas_height}}px' canvas-id='canvas'></canvas>
+    <!-- if -->
+    <block wx:if="{{canvas_data.share_show}}">
+      <view class='share_model'>
+        <!-- masking -->
+        <view class='share_mask' bindtap='hide_share'></view>
+        <!-- image -->
+        <view class='share_content'>
+          <image class='share_image' style='width:{{canvas_data.image_width}}px; height:{{canvas_data.image_height}}px' src='{{canvas_path.image}}'></image>
+          <button class='share_image_save' bindtap='button_sava'>保存</button>
+        </view>
+        <!-- ico(×) -->
+        <view class='closs_share_model' bindtap='closs_share_model'>
+          <image class='closs_share_X' src='{{canvas_data.closs_share_X}}'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</block>

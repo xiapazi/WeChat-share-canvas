@@ -1,0 +1,11 @@
+<!--pages/shareOne/shareOne.wxml-->
+<!-- canvas -->
+<canvas class='c_canvas' canvas-id='canvas' style='width:{{canvas_data.canvas_width}}px; height:{{canvas_data.canvas_height}}px'></canvas>
+<view class='global'>
+  <!-- image -->
+  <image class='c_image' style='width:{{canvas_data.image_width}}px;height:{{canvas_data.image_height}}px' src='{{canvas_path.image?canvas_path.image:canvas_path.default}}'></image>
+  <!-- button -->
+  <button class='c_button' bindtap='button_sava'>保存到相册</button>
+  <!-- handover -->
+  <view class='handover' style='right:{{canvas_data.image_width * 0.36}}rpx' bindtap='handover'>换一张</view>
+</view>
